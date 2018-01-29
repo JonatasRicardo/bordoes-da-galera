@@ -39,7 +39,7 @@ export default class App extends Component<{}> {
         <TouchableHighlight onPress={this.openModal.bind(this)}>
           <Image source={imageDK} />
         </TouchableHighlight>
-        <Modal
+        {/* <Modal
           visible={this.state.modalVisible}
           animationType={"slide"}
           onRequestClose={() => this.closeModal()}
@@ -50,7 +50,7 @@ export default class App extends Component<{}> {
               <Button onPress={() => this.closeModal()} title="Close modal" />
             </View>
           </View>
-        </Modal>
+        </Modal> */}
       </View>
     );
   }

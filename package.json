@@ -1,5 +1,5 @@
 {
-  "name": "Bordões da Galera",
+  "name": "bordoesDaGalera",
   "author": "Jônatas Ricardo Silva dos Santos",
   "license": "LGPLv3",
   "version": "0.0.1",
@@ -19,6 +19,10 @@
     "react-test-renderer": "16.2.0"
   },
   "jest": {
-    "preset": "react-native"
+    "preset": "react-native",
+    "moduleNameMapper": { 
+      "\\.(jpg|jpeg|png|gif|eot|otf|webp|svg|ttf|woff|woff2|mp4|webm|wav|mp3|m4a|aac|oga)$": "<rootDir>/assetsTransformer.js",
+      "\\.(css|scss|sass|less)$": "<rootDir>/assetsTransformer.js"
+    } 
   }
 }
